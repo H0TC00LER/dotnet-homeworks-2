@@ -31,7 +31,7 @@ public class ConcurrencyTests
         Assert.Equal(expected, Concurrency.Index);
     }
     
-    [Fact]
+    [Fact (Skip = "недетерминированное поведение")]
     public void EightThreads_100KIterations_RaceIsReproduced()
     {
         var expected = Concurrency.Increment(8, 100_000);
