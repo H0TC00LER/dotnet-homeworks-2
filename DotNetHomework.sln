@@ -1,7 +1,5 @@
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32825.248
-MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{ACFCEFF7-8C3B-4D05-8080-DD19A6E07873}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
@@ -9,17 +7,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{ACFCEFF7-8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "actions", "actions", "{82BA388F-4AE2-43A2-965A-AC2092BF26F3}"
 	ProjectSection(SolutionItems) = preProject
-		.github\coverlet.runsettings = .github\coverlet.runsettings
 		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
-		.github\workflows\Plagiarism_detector.yml = .github\workflows\Plagiarism_detector.yml
 		.github\workflows\test-reporter.yml = .github\workflows\test-reporter.yml
+		.github\workflows\Plagiarism_detector.yml = .github\workflows\Plagiarism_detector.yml
+		.github\coverlet.runsettings = .github\coverlet.runsettings
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hw1", "Homework1\Hw1\Hw1.csproj", "{23CB0160-E5F4-4D6E-9508-B2A7EC1C3C63}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework2", "Homework2", "{FF533E0A-EA8D-4700-A216-41C5F1DAA968}"
+	ProjectSection(SolutionItems) = preProject
+		Homework2\README.md = Homework2\README.md
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hw1.Tests", "Homework1\Hw1.Tests\Hw1.Tests.csproj", "{CED4E456-514F-4814-B4D2-77C8A8EAD443}"
+Project("{F571AB99-FB84-49F4-A0DF-F27AA55F3F3F}") = "Hw2", "Homework2\Hw2\Hw2.ilproj", "{91F15280-A17E-4A33-A838-2B40D5D300C8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework1", "Homework1", "{0A53B8CD-6F34-41EC-82D5-2105806CF016}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw2Tests", "Homework2\Hw2.Tests\Hw2Tests.csproj", "{73139B13-9AC4-4604-9E67-028CDA04A326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw1", "Homework1\Hw1\Hw1.csproj", "{9820DA28-D162-4994-A0A3-B8A8E9580A31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw1.Tests", "Homework1\Hw1.Tests\Hw1.Tests.csproj", "{96BC6894-1B74-4B8A-882F-132ACA69BAC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework1", "Homework1", "{15ECBDA0-32A1-4630-B2CF-717B645EB74D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,23 +34,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{23CB0160-E5F4-4D6E-9508-B2A7EC1C3C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23CB0160-E5F4-4D6E-9508-B2A7EC1C3C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23CB0160-E5F4-4D6E-9508-B2A7EC1C3C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23CB0160-E5F4-4D6E-9508-B2A7EC1C3C63}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CED4E456-514F-4814-B4D2-77C8A8EAD443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CED4E456-514F-4814-B4D2-77C8A8EAD443}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CED4E456-514F-4814-B4D2-77C8A8EAD443}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CED4E456-514F-4814-B4D2-77C8A8EAD443}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
+		{73139B13-9AC4-4604-9E67-028CDA04A326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73139B13-9AC4-4604-9E67-028CDA04A326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73139B13-9AC4-4604-9E67-028CDA04A326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73139B13-9AC4-4604-9E67-028CDA04A326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9820DA28-D162-4994-A0A3-B8A8E9580A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9820DA28-D162-4994-A0A3-B8A8E9580A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9820DA28-D162-4994-A0A3-B8A8E9580A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9820DA28-D162-4994-A0A3-B8A8E9580A31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96BC6894-1B74-4B8A-882F-132ACA69BAC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96BC6894-1B74-4B8A-882F-132ACA69BAC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96BC6894-1B74-4B8A-882F-132ACA69BAC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96BC6894-1B74-4B8A-882F-132ACA69BAC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{23CB0160-E5F4-4D6E-9508-B2A7EC1C3C63} = {0A53B8CD-6F34-41EC-82D5-2105806CF016}
-		{CED4E456-514F-4814-B4D2-77C8A8EAD443} = {0A53B8CD-6F34-41EC-82D5-2105806CF016}
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {14E2AE37-D527-4B87-9FA4-66ADE8EDCFCA}
+		{91F15280-A17E-4A33-A838-2B40D5D300C8} = {FF533E0A-EA8D-4700-A216-41C5F1DAA968}
+		{73139B13-9AC4-4604-9E67-028CDA04A326} = {FF533E0A-EA8D-4700-A216-41C5F1DAA968}
+		{9820DA28-D162-4994-A0A3-B8A8E9580A31} = {15ECBDA0-32A1-4630-B2CF-717B645EB74D}
+		{96BC6894-1B74-4B8A-882F-132ACA69BAC9} = {15ECBDA0-32A1-4630-B2CF-717B645EB74D}
 	EndGlobalSection
 EndGlobal
