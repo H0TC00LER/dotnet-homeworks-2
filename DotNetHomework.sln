@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hw1", "Homework1\Hw1\Hw1.cs
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hw1.Tests", "Homework1\Hw1.Tests\Hw1.Tests.csproj", "{CED4E456-514F-4814-B4D2-77C8A8EAD443}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework1", "Homework1", "{0A53B8CD-6F34-41EC-82D5-2105806CF016}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{23CB0160-E5F4-4D6E-9508-B2A7EC1C3C63} = {0A53B8CD-6F34-41EC-82D5-2105806CF016}
+		{CED4E456-514F-4814-B4D2-77C8A8EAD443} = {0A53B8CD-6F34-41EC-82D5-2105806CF016}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {14E2AE37-D527-4B87-9FA4-66ADE8EDCFCA}
