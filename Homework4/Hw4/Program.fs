@@ -5,4 +5,4 @@ let Main val1 operation val2 =
     let args = [|val1; operation; val2|]
     let options = parseCalcArguments args
     let result = calculate options.arg1 options.operation options.arg2
-    result
+    printfn "Result is %f" result
