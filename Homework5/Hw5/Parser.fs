@@ -3,6 +3,7 @@
 open System
 open Hw5.Calculator
 open Hw5.MaybeBuilder
+open System.Globalization
 
 let isArgLengthSupported (args:string[]): Result<'a,'b> =
     match args.Length with
@@ -19,8 +20,8 @@ let inline isOperationSupported (arg1, operation, arg2): Result<('a * Calculator
     | _ -> Error Message.WrongArgFormatOperation
 
 let parseArgs (args: string[]): Result<('a * CalculatorOperation * 'b), Message> =
-    let tup1 = Double.TryParse(args[0])
-    let tup2 = Double.TryParse(args[2])
+    let tup1 = Double.TryParse(args[0], NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture)
+    let tup2 = Double.TryParse(args[2], NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture)
     if (fst tup1 && fst tup2)
     then 
         isOperationSupported (snd tup1, args[1], snd tup2)
