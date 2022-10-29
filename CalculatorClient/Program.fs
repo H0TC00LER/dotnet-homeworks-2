@@ -1,7 +1,6 @@
 ﻿module CalculatorClient
 open System
 open System.Net.Http
-open System.Net
 
 let matchOperation operation
     = match operation with
@@ -21,7 +20,7 @@ let calculateAsync (client: HttpClient) =
             let! result = response.Content.ReadAsStringAsync() |> Async.AwaitTask
             printfn "%A" result
     }
-    
+
 [<EntryPoint>]
 let main _ = 
     use client = new HttpClient()
