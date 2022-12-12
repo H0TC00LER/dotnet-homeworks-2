@@ -21,4 +21,8 @@
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
     </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Homework10\Hw10\Hw10.csproj" />
+    </ItemGroup>
 </Project>
